@@ -6,7 +6,7 @@ user_agent=YOUR_USER_AGENT
 
 # Python Script Path
 [Python]
-script_path=src_new/main/python
+script_path=src/main/python
 
 # Hugging Face API Key
 [HuggingFace]

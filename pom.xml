@@ -195,10 +195,10 @@
     </dependencies>
 
     <build>
-        <sourceDirectory>src_new/main/java</sourceDirectory>
+        <sourceDirectory>src/main/java</sourceDirectory>
         <resources>
             <resource>
-                <directory>src_new/main/resources</directory>
+                <directory>src/main/resources</directory>
             </resource>
         </resources>
         <plugins>
