@@ -1,0 +1,113 @@
+Subreddit,Post Title,Comment
+programming,The State of the Subreddit (May 2024),"Graphite.dev ""articles"" can get in the bin too please, all also under the banner of advertising.
+
+
+At least most of Auth0's articles are mostly applicable to all OAuth implementations."
+programming,The State of the Subreddit (May 2024),I think there should be a rule that posts about articles/papers/etc. older than a few years should indicate the year in the title.
+programming,The State of the Subreddit (May 2024),I still can't differentiate between this sub and r/coding due to the similar (spammy-ish) posts on both subs. These new rules hopefully can increase the quality of this sub!
+programming,The State of the Subreddit (May 2024),"Thanks for being transparent about your decision-making, I think these are good changes"
+programming,The State of the Subreddit (May 2024),"""To post is human, to lurk divine."""
+programming,Software is Way Less Performant Today,"If I press the windows button on my 16 core 64gb laptop, Windows 11 pauses for half a second before rendering the start menu. This was a solved problem 25 years ago.
+
+I'm tired, boss."
+programming,Software is Way Less Performant Today,"Performance should be a feature.
+
+In my work I routinely make things faster, both my code and that of others. I find it a really satisfying problem domain and customers love it.
+
+At one job I was profiling some code and noticed some inefficiency in the spell checker. Nothing major, a few imperceptible fractions of a second on my development machine, but the issue was clear so I just fixed it and moved on. At the next user group meeting everyone was saying ""I don't know what you did but the app is so much faster and it’s just wonderful"". I really like it when customers are happy like that."
+programming,Software is Way Less Performant Today,MS Teams is the most counterproductive software I have ever used
+programming,Software is Way Less Performant Today,"What is actually slowing incredibly poor design decisions, combined with building on abstractions built on abstractions built on abstractions without ever understanding that anything you’re doing underneath is doing too. 
+
+I work in c++, and a few years ago, I worked on a project where I added support for dumping the current state to a file in json. 2 years pass and it takes about 10 seconds to start the app up. 
+
+I run the profiler, turns out that someone had been tasked to make it restore previous state, and someone else had been tasked to return a “scratch” if unsaved. The implementation involved loading the entire last project, and the entire “last know state”, diffing the result, and then re-loading the entire state that we wanted to use. The bottleneck in it? Parsing 200MB of floats from json because someone else had stored height map data and chosen a default size that resulted in each save file being 200MB. It was also mostly  “0.0”, “0.0”
+
+I replaced the “save height map” and “load height map” to JSON functions with a base64 encoded blob (the values were integers between 0 and 256), which reduced the size by a factor of 5, and brought the loading time back down to sub second. 
+
+Anyone could have done this, anyone could have looked into it, but we bolted features on top of features and built something “maintainable” that wasn’t fit for purpose."
+programming,Software is Way Less Performant Today,"It’s the same issue with Xcode. Over the years it’s gotten progressively slower (and buggier too, but that’s a separate rant). It got to the point where I’d have a better user experience working on the same projects on my old 2014 MacBook Air using an older version of Xcode, than I did on my 2018 Mac Mini (3.2GHz 6-core i7, 32GB RAM) using a later version of Xcode. And the problem is that it’s not just new features, the performance regressions are seen in the old features, like having to wait +10s (sometimes seemingly forever) for autocomplete suggestions to appear, or even noticeable input latency (hit a key and see a delay before the character appears in the code). Yes, upgrading to a more recent machine (“new” base model M3 MacBook Air) has sped things up again, but you shouldn’t need new hardware just to make old features work well again and even then I still see features in macOS that runs slower than it used to.
+
+I think a big part of this problem is just how modern software is developed and what the incentives are. The focus tends to be on getting features out for a new release because that’s where the business incentive is, whereas improving what is already there isn’t given as much attention. Users will put up with buggy slow software. And since many things are kind of slow, it doesn’t really stand out as being slow. Now this isn’t to say that optimisations aren’t being done, or that everything is slow, but there is so much that is."
+programming,In Search of a Faster SQLite,"> The benefits become noticeable only at p999 onwards; for p90 and p99, the performance is almost the same as SQLite. (Could it be because they run a single query?)
+
+
+I'd be more than interested in thorough and more scrutinized testing to see if there's truly a meaningful difference between vanilla SQLite and an asynchronous I/O rewritten build!"
+programming,We’ve Been Here Before,Past performance is not indicative of future results
+programming,We’ve Been Here Before,"It has all happened before, it will all happen again."
+programming,Why am I writing a Rust compiler in C?,"From the blog post:
+
+> For Rust, your main compiler is rustc. If you don’t know, this is the underlying program that cargo calls when you run cargo build. It’s fantastic software, and frankly a gem of the open source community. Its code quality is up there with the Linux kernel and the Quake III source code.
+> 
+> However, rustc itself is a program. So it needs a compiler to compile it from its source code to machine code. Say, what language is rustc written in?
+> 
+> rustc is 97.3 percent rust
+>
+> Ah, rustc is a Rust program. Written in Rust, for the purpose of compiling Rust code. But, think about this for a second. If rustc is written in Rust, and rustc is needed to compile Rust code, that means you need to use rustc to compile rustc. Which is fine for us users, since we can just download rustc from the internet and use it.
+>
+> But, who compiled the first rustc? There had to be a chicken before the egg, right? Where does it start?
+>
+> [ ... ]
+>
+> This is where we introduce the Bootstrappable Builds project. To me, this is one of the most fascinating projects in the open source community. It’s basically code alchemy.
+>
+> Their Linux bootstrap process starts with a 512-byte binary seed. This seed contains what’s possibly the simplest compiler you can imagine: it takes hexadecimal digits and outputs the corresponding raw bytes. As an example, here part of the “source code” that’s compiled with this compiler."
+programming,Why am I writing a Rust compiler in C?,"And more for entertainment, there exists also a C compiler written in Rust:
+
+https://github.com/PhilippRados/wrecc
+
+To me, it appears not as *practically* important as the other way around, but I could be wrong."
+programming,Why am I writing a Rust compiler in C?,"Tldr; the author is interested in how compilers work.
+
+On a serious note, it's very normal and has been decades that one of the first things done with the compiler for a new programming language is rebuilding the compiler in that language. Why? Because if you've invented a new programming language, you've probably created some useful abstractions that make it easier to write better software.
+
+So once you've written the first, elementary C compiler in assembly, it makes sense that you'd use C to write a better C compiler, because it will be much less effort than the first time around and deliver a better result."
+programming,Why am I writing a Rust compiler in C?,"There’s mrust, which has similar goals. I’m actually somewhat surprised a C bootstrap hasn’t been attempted yet."
+programming,Why am I writing a Rust compiler in C?,"Is it possible to write a rust compiler with a missing or bare-bones borrow-checker? Assuming the source compiles with the full compiler, would this be a viable shortcut, if bootstrapping is the main goal?"
+programming,"""Rules"" that terminal programs follow","Beyond, `^C`, beyond `^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C`, there is `^\`. ([SIGQUIT](https://www.gnu.org/software/libc/manual/html_node/Termination-Signals.html), which is like the interactive `kill -9`)"
+programming,"""Rules"" that terminal programs follow","> --help should print help text
+
+Tell that to git. Every time I do --help and it opens my fucking browser I get angry all over again..."
+programming,"""Rules"" that terminal programs follow","> rule 6: disable colours when writing to a pipe
+
+FWIW, I actually find it obnoxious -- borderline infuriating -- when programs change behavior based on whether they are writing to a pipe, and that includes disabling colors.
+
+It's too often that all the pipe is doing is passing into a pager or something else where it makes perfect sense to retain the color output.
+
+If you do this, please provide something like `--color=force` so that I can just set that. (The article mentions this as a possibility, but my opinion is that failing to provide such an option is bad command line citizenship, and my preference would be that behavior is default personally.)"
+programming,"""Rules"" that terminal programs follow",I love `^U` to delete the current line. That should be followed. :)
+programming,"""Rules"" that terminal programs follow","> rule 2: TUIs should quit when you press q
+
+What if I prefer :wq or :q! ?
+
+On a more serious note, it's an interesting article. However, some of these rules require special handling of signals and the terminal, which may be difficult to do in a portable manner. 
+
+So, unless the language you use has bindings for readline, or similar libraries, you'll have to include platform specific middleware for this to be portable. And that could make software maintenance more difficult.
+
+Python, for example, provides a semi-portable way to [implement this kind of functionality](https://docs.python.org/3/howto/curses.html)."
+programming, Yozefu: A TUI for exploring data of a kafka cluster ,"Hi everyone,
+
+I have just release the first version of [Yōzefu](https://github.com/MAIF/yozefu), an interactive terminal user interface for exploring data of a kafka cluster. It is an alternative tool to AKHQ, redpanda console or the kafka plugin for JetBrains IDEs.The tool is built on top of Ratatui, a Rust library for building TUIs. Yozefu offers interesting features such as:
+
+\* Real-time access to data published to topics.
+
+\* The ability to search kafka records across multiple topics.
+
+\* A search query language inspired by SQL providing fine-grained filtering capabilities.
+
+\* The possibility to extend the search engine with user-defined filters written in WebAssembly.
+
+More details in the [README.md](https://github.com/MAIF/yozefu) file. Let me know if you have any questions!
+
+Github: [https://github.com/MAIF/yozefu](https://github.com/MAIF/yozefu)"
+programming,I built for the problem I have today,"It never ceases to amaze me that OOP ideologists on the one hand will preach ""DRY! DRY! DRY!"" every chance they get, because obviously repeated functions are unnecessary code and thus not clean...
+
+...and on the other hand demand that we build useless abstractions to prepare for problems we *might* have at some point in the future, which, right now however, are entirely unnecessary code.
+
+And before any OOP apologetist tries: No, maintainability is not an excuse, because this shit methodology of building abstractions before they are required, drags down maintainability to begin with."
+programming,I built for the problem I have today,"Sorry this was such a non post I really have to comment. To anyone wondering if you should read this thing:
+""I overcomplicated an idea in my head and then went with an easier solution that solves my problem right now. Lol."""
+programming,What every systems programmer should know about concurrency [pdf],Bad concurrency turns shakespear into yoda.
+programming,What every systems programmer should know about concurrency [pdf],"While most of the latter half is specific to C and C++, there's some good stuff here for people working further up the software stack too. The same concepts that are applied to threads on a single device can just as well be applied to threads running across multiple nodes in a cluster, accessing a shared data store. Slightly different considerations and priorities, similar strategies."
+programming,What every systems programmer should know about concurrency [pdf],"The section about atomic word sizes isn’t quite correct. Some architectures support DWCAS (double width compare and swap, not to be confused with DCAS although that could apply too), which do allow you to perform an atomic operation on data bigger than the underlying word size. For instance, x86 has cmpxchg*N*b (where *N* is 8 or 16), so it is possible to have a 64-bit lock-free atomic counter on 32-bit x86 (or similarly a 128-bit counter on 64-bit). This does come with one caveat though in that you will now need perform the operation in a CAS loop, whereas a single `lock add` would have sufficed for a smaller sized integer, which has the advantage of also being able to be used in a wait-free algorithm (while a CAS-loop can only be lock-free). The compiler is also aware of this and will use a cmpxchg*N*b loop when it can instead of an explicit lock. 
+
+In lock-free algorithms being able to use a DWCAS is quite convenient for certain patterns such as dealing with ABA problems, since a common strategy is to use tagging (a pointer tagged with a counter). Of course on architectures without a DWCAS, tagging may still be possible if you can safely remove some bits from the value."

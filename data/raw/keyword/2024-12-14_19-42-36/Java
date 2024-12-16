@@ -1,0 +1,115 @@
+Subreddit,Post Title,Comment
+brdev,Java 17 e Java 21,"Não tem Google no seu computador? 
+
+
+A especificação Java é aberta e pública qualquer um pode pesquisar o que mudou do Java 1 pro 18 e pro 19 e pro 20....
+
+
+Sério se você precisa vir no reddit perguntar isso você ten problemas bem maiores que a versão Java usada no código "
+brdev,Java 17 e Java 21,"Acho  que o mais interessante agora é que as threads virtuais deram uma amadurecida, então da pra usar com mais confiança e junto veio o scopped value pra facilitar  o trabalho no ambito de multithread dentro de contextos e com imutabilidade garantida. Isso é mais pra quem trabalha com concorrência ou programação reativa.
+Outra coisa que eu gostei bastante é do sequenced Collections que trouxe outra forma de trabalhar com as collections."
+brdev,Java 17 e Java 21,"O gamechanger do Java 21 é as virtual threads (ex project loom). Os majors frameworks já permitem executar requests em VT. Excepcional ganho, mas pode não ser ideal pra todos os casos devido a thread pinning."
+MinecraftServer,₊⁺⋆★ Inter ✩ SMP ★⋆⁺₊ [SMP] {Friendly} {Community} {Java-Bedrock} {Modded-Java} {LimitedLives} {Themed} {Whitelist},"
+
+* Looking for instant support instead? Have a urgent question or just want to talk to the community without waiting? Join the r/minecraftserver Official Discord server https://discord.gg/bcbUzMYbsh
+
+* ✨ Server Starts Saturday ✨ Friendly, Cooperative Vanilla Survival - Join here: https://discord.gg/creakingsmp
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/MinecraftServer) if you have any questions or concerns.*"
+piscatorio,Java dones,https://preview.redd.it/y0qyjlrs1l6e1.jpeg?width=650&format=pjpg&auto=webp&s=b29dfaf4d99fcf7cec8ccc54cd35113a559134d3
+piscatorio,Java dones,KAKAAKKAKAKAKAKAK QUE PORRA AKKAAKKAAKKAAKKAKAKA
+brdev,Pode usar Vscode para para programar em JAVA?,"usa oq você quiser mano, eu ein"
+brdev,Pode usar Vscode para para programar em JAVA?,"Rapaz, se vc quiser programar em assembly no bloco de notas, vc faz, não tem polícia do código pra te pegar não"
+brdev,Pode usar Vscode para para programar em JAVA?,Usar o Intellij é caminho sem volta. É simplesmente muito bom.
+brdev,Pode usar Vscode para para programar em JAVA?,"Rapaz, dá pra usar até notepad."
+brdev,Pode usar Vscode para para programar em JAVA?,"Problema do VS Code é que ele costuma ser muito cru pra tudo que não seja Javascript, pelo menos na minha experiência. Até C# que em teoria deveria ter um bom suporte por ser da Microsoft fica muito pra trás de um Visual Studio Community por exemplo.
+
+O que acontece é que com IDEs especializadas você ganha muita produtividade, porque elas já assumem muita coisa e funcionam logo de cara, ao invés de outras IDEs mais genéricas como o VS Code que exige mais configuração e cuidado."
+learnjava,Best resources to learn Java,"#Please ensure that:
+
++ Your *code* is *properly formatted* as *code block* - see the *sidebar* (About on mobile) for instructions
++ You include *any and all error messages* in full - best also formatted as code block
++ You ask *clear questions*
++ You *demonstrate effort* in solving your question/problem - plain posting your assignments is forbidden (and such posts will be removed) as is asking for or giving solutions.
+    
+
+**If any of the above points is not met, your post can and will be removed without further warning.**
+
+Code is to be formatted as **code block** (*old reddit/markdown editor:* empty line before the code, each code line indented by 4 spaces, *new reddit:* https://i.imgur.com/EJ7tqek.png) 
+or linked via an external *code hoster*, like *pastebin.com*, *github gist*, *github*, *bitbucket*, *gitlab*, etc. 
+
+Please, **do not use** triple backticks (\`\`\`) as they will only render properly on *new reddit*, not on *old reddit*.  
+
+Code blocks look like this:
+
+    public class HelloWorld {
+
+        public static void main(String[] args) {
+            System.out.println(""Hello World!"");
+        }
+    }
+
+You do not need to repost unless your post has been removed by a moderator. Just use the *edit function* of reddit to make sure your post complies with the above. 
+
+If your post has remained in violation of these rules for a prolonged period of time (at least an hour), a moderator may remove it at their discretion. In this case, they will comment with an explanation on why it has been removed, and you will be required to resubmit the entire post following the proper procedures.
+
+#To potential helpers
+
+Please, **do not help** if any of the above points are not met, rather *report* the post. We are trying to improve the quality of posts here. 
+In helping people who can't be bothered to comply with the above points, you are doing the community a disservice. 
+
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/learnjava) if you have any questions or concerns.*"
+learnjava,Best resources to learn Java,Honestly having just gone through the MOOC parts 1 & 2 I can see why it's recommended so much here. If you complete all the exercises it really solidifies things. The next step after the MOOC is a little hazy but books like java concurrency in practice and effective java get recommended a lot.
+learnjava,Best resources to learn Java,"It seems that you are looking for resources for learning Java.
+
+In our *sidebar* (""About"" on mobile), we have a section ""Free Tutorials"" where we list the most commonly recommended courses.
+
+To make it easier for you, the recommendations are posted right here:
+
+* MOOC [Java Programming](http://java-programming.mooc.fi) from the University of Helsinki 
+* [Java for Complete Beginners](https://www.udemy.com/java-tutorial)
+   * accompanying site [CaveOfProgramming](http://caveofprogramming.com)
+* [Derek Banas' Java Playlist](https://www.youtube.com/playlist?list=PLE7E8B7F4856C9B19)
+   * accompanying site [NewThinkTank](http://newthinktank.com/)
+* [Hyperskill](https://hi.hyperskill.org/) is a fairly new resource from *Jetbrains* (the maker of IntelliJ)
+
+Also, don't forget to look at:
+
+* [The official Documentation](http://docs.oracle.com/javase/)
+* [The official Java Tutorials](http://www.oracle.com/technetwork/java/index-jsp-135888.html)
+* [Our community resources thread](https://www.reddit.com/r/learnjava/comments/md1loc/community_resources/)
+
+If you are looking for learning resources for *Data Structures and Algorithms*, look into: 
+
+""Algorithms"" by Robert Sedgewick and Kevin Wayne - Princeton University
+
++ Coursera course:
+   + [Part I](https://www.coursera.org/learn/algorithms-part1)
+   + [Part II](https://www.coursera.org/learn/algorithms-part2)
++ Coursebook
+   + [Algorithms 4^th Edition](http://algs4.cs.princeton.edu/home/)
+
+Your post remains visible. There is nothing you need to do.
+
+I am a bot and this message was triggered by keywords like ""learn"", ""learning"", ""course"" in the title of your post.
+
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/learnjava) if you have any questions or concerns.*"
+learnjava,Best resources to learn Java,[https://roadmap.sh/java](https://roadmap.sh/java)
+learnjava,Best resources to learn Java,"I'll work on the demos available on Springboot official website. Even though the threads are old, on the industry a large portion uses old versions of java (8, 11); on Disney we used java 11 and in my current role we use the 11 version too, so ""old books"" will still be relevant and useful in a work environment. For practical advice: Effective Java and Spring in action; then I'd check a book on multi threading"
+Minecraft,Vyralis Arcanum [Roleplay] [Modded] {Whitelist} {Java} {15+},"* Upvote this comment if this is a good quality post that fits the purpose of r/Minecraft
+
+* Downvote this comment if this post is poor quality or does not fit the purpose of r/Minecraft
+
+* Downvote this comment *and report the post* if it breaks the [rules](https://www.reddit.com/r/Minecraft/wiki/rules)
+
+---
+
+[Subreddit Rules](https://old.reddit.com/r/Minecraft/wiki/rules)[](## Dragonisgaylikeurmom|1he8ecl)"
+Minecraft,Vyralis Arcanum [Roleplay] [Modded] {Whitelist} {Java} {15+},Server advertising is not allowed here.
+MinecraftBuddies,"Java modded work? Using essential, anyone interested?","Hello u/RunltUp, Thanks for posting to r/MinecraftBuddies! Want to make friends right away? [Join our Discord](https://discord.gg/t2q4BKyXGN)! Got a whitelisted community? Post it in our sister sub r/MinecraftWhitelisted
+
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/MinecraftBuddies) if you have any questions or concerns.*"
+MinecraftBuddies,"Java modded work? Using essential, anyone interested?",Hey I am interested!

@@ -1,0 +1,49 @@
+Subreddit,Post Title,Comment
+programming,The State of the Subreddit (May 2024),"Graphite.dev ""articles"" can get in the bin too please, all also under the banner of advertising.
+
+
+At least most of Auth0's articles are mostly applicable to all OAuth implementations."
+programming,The State of the Subreddit (May 2024),I think there should be a rule that posts about articles/papers/etc. older than a few years should indicate the year in the title.
+programming,The State of the Subreddit (May 2024),I still can't differentiate between this sub and r/coding due to the similar (spammy-ish) posts on both subs. These new rules hopefully can increase the quality of this sub!
+programming,Software is Way Less Performant Today,"If I press the windows button on my 16 core 64gb laptop, Windows 11 pauses for half a second before rendering the start menu. This was a solved problem 25 years ago.
+
+I'm tired, boss."
+programming,Software is Way Less Performant Today,"Performance should be a feature.
+
+In my work I routinely make things faster, both my code and that of others. I find it a really satisfying problem domain and customers love it.
+
+At one job I was profiling some code and noticed some inefficiency in the spell checker. Nothing major, a few imperceptible fractions of a second on my development machine, but the issue was clear so I just fixed it and moved on. At the next user group meeting everyone was saying ""I don't know what you did but the app is so much faster and it’s just wonderful"". I really like it when customers are happy like that."
+programming,Software is Way Less Performant Today,MS Teams is the most counterproductive software I have ever used
+programming,In Search of a Faster SQLite,"> The benefits become noticeable only at p999 onwards; for p90 and p99, the performance is almost the same as SQLite. (Could it be because they run a single query?)
+
+
+I'd be more than interested in thorough and more scrutinized testing to see if there's truly a meaningful difference between vanilla SQLite and an asynchronous I/O rewritten build!"
+programming,We’ve Been Here Before,Past performance is not indicative of future results
+programming,We’ve Been Here Before,"It has all happened before, it will all happen again."
+programming,Why am I writing a Rust compiler in C?,"From the blog post:
+
+> For Rust, your main compiler is rustc. If you don’t know, this is the underlying program that cargo calls when you run cargo build. It’s fantastic software, and frankly a gem of the open source community. Its code quality is up there with the Linux kernel and the Quake III source code.
+> 
+> However, rustc itself is a program. So it needs a compiler to compile it from its source code to machine code. Say, what language is rustc written in?
+> 
+> rustc is 97.3 percent rust
+>
+> Ah, rustc is a Rust program. Written in Rust, for the purpose of compiling Rust code. But, think about this for a second. If rustc is written in Rust, and rustc is needed to compile Rust code, that means you need to use rustc to compile rustc. Which is fine for us users, since we can just download rustc from the internet and use it.
+>
+> But, who compiled the first rustc? There had to be a chicken before the egg, right? Where does it start?
+>
+> [ ... ]
+>
+> This is where we introduce the Bootstrappable Builds project. To me, this is one of the most fascinating projects in the open source community. It’s basically code alchemy.
+>
+> Their Linux bootstrap process starts with a 512-byte binary seed. This seed contains what’s possibly the simplest compiler you can imagine: it takes hexadecimal digits and outputs the corresponding raw bytes. As an example, here part of the “source code” that’s compiled with this compiler."
+programming,Why am I writing a Rust compiler in C?,"And more for entertainment, there exists also a C compiler written in Rust:
+
+https://github.com/PhilippRados/wrecc
+
+To me, it appears not as *practically* important as the other way around, but I could be wrong."
+programming,Why am I writing a Rust compiler in C?,"Tldr; the author is interested in how compilers work.
+
+On a serious note, it's very normal and has been decades that one of the first things done with the compiler for a new programming language is rebuilding the compiler in that language. Why? Because if you've invented a new programming language, you've probably created some useful abstractions that make it easier to write better software.
+
+So once you've written the first, elementary C compiler in assembly, it makes sense that you'd use C to write a better C compiler, because it will be much less effort than the first time around and deliver a better result."

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox spacing="10" alignment="CENTER" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.sentimentanalysis.ui.controllers.UserInputAnalysisController">
+    
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Enter text to analyze:" style="-fx-font-size: 14px;"/>
+    
+    <TextArea fx:id="textArea" 
+              wrapText="true" 
+              prefRowCount="4" 
+              prefColumnCount="40"/>
+    
+    <HBox spacing="10" alignment="CENTER">
+        <RadioButton fx:id="hdfsModelRadioButton" 
+                    text="HDFS Model" 
+                    selected="true">
+            <toggleGroup>
+                <ToggleGroup fx:id="analysisMethod"/>
+            </toggleGroup>
+        </RadioButton>
+        
+        <RadioButton fx:id="huggingFaceRadioButton" 
+                    text="Hugging Face API" 
+                    toggleGroup="$analysisMethod"/>
+    </HBox>
+    
+    <HBox spacing="10" alignment="CENTER">
+        <Button fx:id="analyzeButton" 
+                text="Analyze" 
+                onAction="#handleAnalyzeButtonAction"/>
+        
+        <ProgressIndicator fx:id="progressIndicator" 
+                          visible="false" 
+                          prefHeight="20" 
+                          prefWidth="20"/>
+    </HBox>
+    
+    <Label fx:id="resultLabel" 
+           style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+    
+</VBox>
