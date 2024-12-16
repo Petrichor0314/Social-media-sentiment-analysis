@@ -2,6 +2,10 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+# Maven wrapper
+mvnw
+mvnw.cmd
+.mvn/
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
@@ -36,3 +40,23 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+# Configuration files 
+src_new/main/resources/config.properties
+
+# Log files
+*.log
+
+# Data files
+data/raw/
+
+# Python virtual environment
+venv/
+__pycache__/
+*.pyc
+
+# IDE specific files
+.idea/
+*.iws
+*.iml
+*.ipr
