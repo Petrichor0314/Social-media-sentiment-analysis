@@ -24,7 +24,7 @@ A comprehensive Java application that performs sentiment analysis on social medi
 
 1. Clone the repository:
    ```bash
-   git clone [your-repository-url]
+   git clone [https://github.com/Petrichor0314/Social-media-sentiment-analysis]
    cd social-media-sentiment-analysis
    ```
 
